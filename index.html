@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    body{
+        width:100%;
+        height:100vh;
+        box-sizing: border-box;
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("images/tajmahal.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+header{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+}
+</style>
+<body>
+    <header>
+         <div class="card m-auto w-50 text-center">
+        <div class="card-header bg-danger text-light text-capitalize font-20 ">love calculator</div>
+        <div class="card-body">
+             <form class="form-inline ">
+                 <div class="form-group">
+                     <input type="text " name="" class="form-control text-center mr-4" placeholder="your name">
+                       </div>
+                 <div><span class="pl-4 pr-4">+</span></div>
+                 <div class="form-group">
+                    <input type="text " name="" class="form-control text-center ml-4" placeholder="lover name">
+                 </div>
+                
+                </form>
+                </div>
+            <br>
+            <div class="w-75 m-auto">
+                <button class="btn btn-primary text-center w-25" onclick="loveconverter()">click me</button>
+            </div>
+            <br>
+            <div>
+                <input type="text" name=""  class="form-control text-center w-50 m-auto" id="loveconverter" placeholder="love percentage" >
+            </div>
+            <br>
+    
+        <div class="card-footer bg-success text-capitalize ">god bless your relationship</div>
+      </div>
+
+      </header>
+
+<script>
+    function loveconverter(){
+        var love =Math.random()*100;
+        love = Math.floor(love);
+        document.getElementById("loveconverter").value = love + "%";
+    }
+    loveconverter();
+</script>
+</body>
+</html>
